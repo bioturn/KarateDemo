@@ -1,0 +1,1862 @@
+09:35:19.510 [main] INFO  io.gatling.compiler.ZincCompiler$ - Compiling 1 Scala source and 2 Java sources to C:\Users\cthompson\IdeaProjects\KarateDemo\target\test-classes ...
+09:35:26.912 [main] INFO  io.gatling.compiler.ZincCompiler$ - Done compiling.
+09:35:28.489 [main] INFO  i.g.c.config.GatlingConfiguration$ - Gatling will try to use 'gatling.conf' as custom config file.
+09:35:29.365 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+09:35:30.718 [GatlingSystem-akka.actor.default-dispatcher-4] INFO  i.g.c.stats.writer.LogFileDataWriter - Initializing
+09:35:30.718 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initializing
+09:35:30.732 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initialized
+09:35:30.741 [GatlingSystem-akka.actor.default-dispatcher-4] INFO  i.g.c.stats.writer.LogFileDataWriter - Initialized
+09:35:31.184 [main] INFO  io.gatling.http.engine.HttpEngine - Start warm up
+09:35:32.257 [main] INFO  io.gatling.http.engine.HttpEngine - Couldn't execute warm up request https://gatling.io: i.g.h.c.i.RequestTimeoutException: Request timeout after 1000 ms
+09:35:32.259 [main] INFO  io.gatling.http.engine.HttpEngine - Warm up done
+09:35:32.505 [GatlingSystem-akka.actor.default-dispatcher-3] INFO  i.g.core.controller.inject.Injector - StoppedInjecting
+09:35:57.052 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.core.controller.inject.Injector - All users of scenario Playing with Fire are stopped
+09:35:57.052 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.core.controller.inject.Injector - Stopping
+09:35:57.053 [GatlingSystem-akka.actor.default-dispatcher-2] INFO  i.gatling.core.controller.Controller - Injector has stopped, initiating graceful stop
+09:35:57.058 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.gatling.core.controller.Controller - StatsEngineStopped
+09:35:57.114 [main] INFO  i.gatling.charts.stats.LogFileReader - Collected ArrayBuffer(C:\Users\cthompson\IdeaProjects\KarateDemo\target\gatling\usersimulation-20200108153530684\simulation.log) from usersimulation-20200108153530684
+09:35:57.124 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass
+09:35:57.135 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass done: read 151 lines
+09:35:57.148 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass
+09:35:57.224 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass: read 151 lines
+11:02:47.013 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+11:02:48.765 [main] DEBUG com.intuit.karate - request:
+1 > GET https://my-json-server.typicode.com/bioturn/FakeJson/db
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: my-json-server.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+11:02:49.351 [main] DEBUG com.intuit.karate - response time in milliseconds: 578.46
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 551fbdcd1e1ce0f2-IAD
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 08 Jan 2020 17:02:50 GMT
+1 < Etag: W/"1ee-s/VChpt7zzO7WT57EoKurguFIdc"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Expires: -1
+1 < Pragma: no-cache
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d864133b9b36d591714f6127f79784c621578502970; expires=Fri, 07-Feb-20 17:02:50 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+{
+  "weapons": [
+    {
+      "bladed": [
+        {
+          "spear": "longinus",
+          "sword": "excalibur"
+        }
+      ]
+    }
+  ],
+  "spells": [
+    {
+      "buff": [
+        {
+          "strength": "embolden",
+          "magic": "empower"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "attack": [
+        {
+          "bread": "tricut"
+        }
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "physical": [
+        {
+          "hands": "monk"
+        }
+      ]
+    }
+  ]
+}
+
+11:02:49.371 [main] DEBUG com.intuit.karate - request:
+2 > GET https://my-json-server.typicode.com/bioturn/FakeJson/db
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Cookie: __cfduid=d864133b9b36d591714f6127f79784c621578502970
+2 > Host: my-json-server.typicode.com
+2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+11:02:49.607 [main] DEBUG com.intuit.karate - response time in milliseconds: 196.95
+2 < 200
+2 < Access-Control-Allow-Credentials: true
+2 < CF-Cache-Status: DYNAMIC
+2 < CF-RAY: 551fbdcf4a40cf18-IAD
+2 < Cache-Control: no-cache
+2 < Connection: keep-alive
+2 < Content-Type: application/json; charset=utf-8
+2 < Date: Wed, 08 Jan 2020 17:02:50 GMT
+2 < Etag: W/"1ee-s/VChpt7zzO7WT57EoKurguFIdc"
+2 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2 < Expires: -1
+2 < Pragma: no-cache
+2 < Server: cloudflare
+2 < Transfer-Encoding: chunked
+2 < Vary: Origin, Accept-Encoding
+2 < Via: 1.1 vegur
+2 < X-Content-Type-Options: nosniff
+2 < X-Powered-By: Express
+{
+  "weapons": [
+    {
+      "bladed": [
+        {
+          "spear": "longinus",
+          "sword": "excalibur"
+        }
+      ]
+    }
+  ],
+  "spells": [
+    {
+      "buff": [
+        {
+          "strength": "embolden",
+          "magic": "empower"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "attack": [
+        {
+          "bread": "tricut"
+        }
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "physical": [
+        {
+          "hands": "monk"
+        }
+      ]
+    }
+  ]
+}
+
+11:02:49.625 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+11:04:24.174 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+11:05:15.265 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+11:10:59.508 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+11:12:42.760 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+12:31:04.437 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+12:32:17.582 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+13:11:44.907 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+13:13:00.418 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+13:13:52.889 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+13:13:52.997 [main] ERROR com.intuit.karate - assertion failed: path: $[*], actual: [{name=greg, height=37}, {name=nick, height=100}], expected: {name=greg}, reason: actual value does not contain expected
+13:16:02.317 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+13:16:02.440 [main] ERROR com.intuit.karate - assertion failed: path: $[*], actual: [{name=greg, height=37}, {name=nick, height=100}], expected: {name=greg}, reason: actual value does not contain expected
+13:19:45.583 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+13:19:45.721 [main] ERROR com.intuit.karate - assertion failed: path: $[*], actual: [{name=greg, height=37}, {name=nick, height=100}], expected: {name=greg}, reason: actual value does not contain expected
+13:21:49.959 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+13:46:31.252 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+13:59:40.210 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+13:59:41.938 [main] DEBUG com.intuit.karate - request:
+1 > GET https://my-json-server.typicode.com/bioturn/FakeJson/db
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: my-json-server.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+13:59:42.537 [main] DEBUG com.intuit.karate - response time in milliseconds: 595.35
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5520c0e1ccccc18e-IAD
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 08 Jan 2020 19:59:42 GMT
+1 < Etag: W/"1ee-s/VChpt7zzO7WT57EoKurguFIdc"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Expires: -1
+1 < Pragma: no-cache
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d5fedf70b2507b4a940dd51901dd84d1b1578513582; expires=Fri, 07-Feb-20 19:59:42 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+{
+  "weapons": [
+    {
+      "bladed": [
+        {
+          "spear": "longinus",
+          "sword": "excalibur"
+        }
+      ]
+    }
+  ],
+  "spells": [
+    {
+      "buff": [
+        {
+          "strength": "embolden",
+          "magic": "empower"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "attack": [
+        {
+          "bread": "tricut"
+        }
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "physical": [
+        {
+          "hands": "monk"
+        }
+      ]
+    }
+  ]
+}
+
+13:59:42.543 [main] ERROR com.intuit.karate - assertion failed: path: $..bladed[0][*], actual: [{"spear":"longinus","sword":"excalibur"}], expected: {spear=longinus}, reason: actual value does not contain expected
+14:00:49.409 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+14:00:51.086 [main] DEBUG com.intuit.karate - request:
+1 > GET https://my-json-server.typicode.com/bioturn/FakeJson/db
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: my-json-server.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+14:00:51.522 [main] DEBUG com.intuit.karate - response time in milliseconds: 416.94
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5520c2918cc59fb2-IAD
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 08 Jan 2020 20:00:51 GMT
+1 < Etag: W/"1ee-s/VChpt7zzO7WT57EoKurguFIdc"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Expires: -1
+1 < Pragma: no-cache
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=db5aed61d4c30e5dda0006720c62d89b51578513651; expires=Fri, 07-Feb-20 20:00:51 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+{
+  "weapons": [
+    {
+      "bladed": [
+        {
+          "spear": "longinus",
+          "sword": "excalibur"
+        }
+      ]
+    }
+  ],
+  "spells": [
+    {
+      "buff": [
+        {
+          "strength": "embolden",
+          "magic": "empower"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "attack": [
+        {
+          "bread": "tricut"
+        }
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "physical": [
+        {
+          "hands": "monk"
+        }
+      ]
+    }
+  ]
+}
+
+14:01:49.904 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+14:01:51.651 [main] DEBUG com.intuit.karate - request:
+1 > GET https://my-json-server.typicode.com/bioturn/FakeJson/db
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: my-json-server.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+14:01:52.072 [main] DEBUG com.intuit.karate - response time in milliseconds: 399.22
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5520c40c0c46e0c2-IAD
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 08 Jan 2020 20:01:52 GMT
+1 < Etag: W/"1ee-s/VChpt7zzO7WT57EoKurguFIdc"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Expires: -1
+1 < Pragma: no-cache
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=dae866db04b1a9a7a535b773a86643b131578513712; expires=Fri, 07-Feb-20 20:01:52 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+{
+  "weapons": [
+    {
+      "bladed": [
+        {
+          "spear": "longinus",
+          "sword": "excalibur"
+        }
+      ]
+    }
+  ],
+  "spells": [
+    {
+      "buff": [
+        {
+          "strength": "embolden",
+          "magic": "empower"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "attack": [
+        {
+          "bread": "tricut"
+        }
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "physical": [
+        {
+          "hands": "monk"
+        }
+      ]
+    }
+  ]
+}
+
+14:01:52.079 [main] ERROR com.intuit.karate - assertion failed: path: $..bladed[0][*], actual: [{"spear":"longinus","sword":"excalibur"}], expected: {spear=longinus}, reason: actual value does not contain expected
+14:03:18.157 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+14:03:19.841 [main] DEBUG com.intuit.karate - request:
+1 > GET https://my-json-server.typicode.com/bioturn/FakeJson/db
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: my-json-server.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+14:03:20.274 [main] DEBUG com.intuit.karate - response time in milliseconds: 409.57
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5520c6333ba2cf18-IAD
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 08 Jan 2020 20:03:20 GMT
+1 < Etag: W/"1ee-s/VChpt7zzO7WT57EoKurguFIdc"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Expires: -1
+1 < Pragma: no-cache
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d437d33c7b15922e5b96889443cbfe3151578513800; expires=Fri, 07-Feb-20 20:03:20 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+{
+  "weapons": [
+    {
+      "bladed": [
+        {
+          "spear": "longinus",
+          "sword": "excalibur"
+        }
+      ]
+    }
+  ],
+  "spells": [
+    {
+      "buff": [
+        {
+          "strength": "embolden",
+          "magic": "empower"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "attack": [
+        {
+          "bread": "tricut"
+        }
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "physical": [
+        {
+          "hands": "monk"
+        }
+      ]
+    }
+  ]
+}
+
+14:03:20.280 [main] ERROR com.intuit.karate - assertion failed: path: $..bladed[0][*], actual: [{"spear":"longinus","sword":"excalibur"}], expected: {spear=longinus}, reason: actual value does not contain expected
+14:04:12.783 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+14:04:14.478 [main] DEBUG com.intuit.karate - request:
+1 > GET https://my-json-server.typicode.com/bioturn/FakeJson/db
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: my-json-server.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+14:04:14.880 [main] DEBUG com.intuit.karate - response time in milliseconds: 399.12
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5520c788bc5de102-IAD
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 08 Jan 2020 20:04:14 GMT
+1 < Etag: W/"1ee-s/VChpt7zzO7WT57EoKurguFIdc"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Expires: -1
+1 < Pragma: no-cache
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=dfea0700f4cdbb526070c2ffffe36c9991578513854; expires=Fri, 07-Feb-20 20:04:14 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+{
+  "weapons": [
+    {
+      "bladed": [
+        {
+          "spear": "longinus",
+          "sword": "excalibur"
+        }
+      ]
+    }
+  ],
+  "spells": [
+    {
+      "buff": [
+        {
+          "strength": "embolden",
+          "magic": "empower"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "attack": [
+        {
+          "bread": "tricut"
+        }
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "physical": [
+        {
+          "hands": "monk"
+        }
+      ]
+    }
+  ]
+}
+
+14:04:14.887 [main] ERROR com.intuit.karate - assertion failed: path: $..bladed[0][*], actual: [{"spear":"longinus","sword":"excalibur"}], expected: {spear=longinus}, reason: actual value does not contain expected
+14:04:39.855 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+14:04:41.518 [main] DEBUG com.intuit.karate - request:
+1 > GET https://my-json-server.typicode.com/bioturn/FakeJson/db
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: my-json-server.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+14:04:42.120 [main] DEBUG com.intuit.karate - response time in milliseconds: 580.80
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5520c831f8d2cec4-IAD
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 08 Jan 2020 20:04:42 GMT
+1 < Etag: W/"1ee-s/VChpt7zzO7WT57EoKurguFIdc"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Expires: -1
+1 < Pragma: no-cache
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d355b7c56786b41b43fd6c22ef48e3fa81578513881; expires=Fri, 07-Feb-20 20:04:41 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+{
+  "weapons": [
+    {
+      "bladed": [
+        {
+          "spear": "longinus",
+          "sword": "excalibur"
+        }
+      ]
+    }
+  ],
+  "spells": [
+    {
+      "buff": [
+        {
+          "strength": "embolden",
+          "magic": "empower"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "attack": [
+        {
+          "bread": "tricut"
+        }
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "physical": [
+        {
+          "hands": "monk"
+        }
+      ]
+    }
+  ]
+}
+
+14:06:24.289 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+14:06:25.957 [main] DEBUG com.intuit.karate - request:
+1 > GET https://my-json-server.typicode.com/bioturn/FakeJson/db
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: my-json-server.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+14:06:26.444 [main] DEBUG com.intuit.karate - response time in milliseconds: 483.91
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5520cabe7f65cf4c-IAD
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 08 Jan 2020 20:06:26 GMT
+1 < Etag: W/"1ee-s/VChpt7zzO7WT57EoKurguFIdc"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Expires: -1
+1 < Pragma: no-cache
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=ddc64375e5c05e2e998aa90377d5024011578513986; expires=Fri, 07-Feb-20 20:06:26 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+{
+  "weapons": [
+    {
+      "bladed": [
+        {
+          "spear": "longinus",
+          "sword": "excalibur"
+        }
+      ]
+    }
+  ],
+  "spells": [
+    {
+      "buff": [
+        {
+          "strength": "embolden",
+          "magic": "empower"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "attack": [
+        {
+          "bread": "tricut"
+        }
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "physical": [
+        {
+          "hands": "monk"
+        }
+      ]
+    }
+  ]
+}
+
+14:06:26.455 [main] ERROR com.intuit.karate - assertion failed: path: $..bladed[0][*], actual: [{"spear":"longinus","sword":"excalibur"}], expected: [{spear=longinus}], reason: actual value does not contain any expected
+14:11:32.045 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+14:11:33.766 [main] DEBUG com.intuit.karate - request:
+1 > GET https://my-json-server.typicode.com/bioturn/FakeJson/db
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: my-json-server.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+14:11:34.308 [main] DEBUG com.intuit.karate - response time in milliseconds: 518.73
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5520d2428dadc19d-IAD
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 08 Jan 2020 20:11:34 GMT
+1 < Etag: W/"1ee-s/VChpt7zzO7WT57EoKurguFIdc"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Expires: -1
+1 < Pragma: no-cache
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=dbbb850585ca6febaf68570470a3ee0c31578514294; expires=Fri, 07-Feb-20 20:11:34 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+{
+  "weapons": [
+    {
+      "bladed": [
+        {
+          "spear": "longinus",
+          "sword": "excalibur"
+        }
+      ]
+    }
+  ],
+  "spells": [
+    {
+      "buff": [
+        {
+          "strength": "embolden",
+          "magic": "empower"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "attack": [
+        {
+          "bread": "tricut"
+        }
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "physical": [
+        {
+          "hands": "monk"
+        }
+      ]
+    }
+  ]
+}
+
+14:12:45.163 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+14:12:46.828 [main] DEBUG com.intuit.karate - request:
+1 > GET https://my-json-server.typicode.com/bioturn/FakeJson/db
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: my-json-server.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+14:12:47.350 [main] DEBUG com.intuit.karate - response time in milliseconds: 519.39
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5520d40aff92f0d9-IAD
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 08 Jan 2020 20:12:47 GMT
+1 < Etag: W/"1ee-s/VChpt7zzO7WT57EoKurguFIdc"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Expires: -1
+1 < Pragma: no-cache
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d8b955f07f4b97fa25c36d97258b8542d1578514367; expires=Fri, 07-Feb-20 20:12:47 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+{
+  "weapons": [
+    {
+      "bladed": [
+        {
+          "spear": "longinus",
+          "sword": "excalibur"
+        }
+      ]
+    }
+  ],
+  "spells": [
+    {
+      "buff": [
+        {
+          "strength": "embolden",
+          "magic": "empower"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "attack": [
+        {
+          "bread": "tricut"
+        }
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "physical": [
+        {
+          "hands": "monk"
+        }
+      ]
+    }
+  ]
+}
+
+14:13:57.390 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+14:13:59.573 [main] DEBUG com.intuit.karate - request:
+1 > GET https://my-json-server.typicode.com/bioturn/FakeJson/db
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: my-json-server.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+14:14:00.082 [main] DEBUG com.intuit.karate - response time in milliseconds: 495.59
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5520d5d1ed06e106-IAD
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 08 Jan 2020 20:14:00 GMT
+1 < Etag: W/"1ee-s/VChpt7zzO7WT57EoKurguFIdc"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Expires: -1
+1 < Pragma: no-cache
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=dae34be82f68df12f120f3349a8deac5c1578514439; expires=Fri, 07-Feb-20 20:13:59 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+{
+  "weapons": [
+    {
+      "bladed": [
+        {
+          "spear": "longinus",
+          "sword": "excalibur"
+        }
+      ]
+    }
+  ],
+  "spells": [
+    {
+      "buff": [
+        {
+          "strength": "embolden",
+          "magic": "empower"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "attack": [
+        {
+          "bread": "tricut"
+        }
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "physical": [
+        {
+          "hands": "monk"
+        }
+      ]
+    }
+  ]
+}
+
+14:14:00.091 [main] ERROR com.intuit.karate - assertion failed: path: $..bladed[0][*], actual: [{"spear":"longinus","sword":"excalibur"}], expected: [{spear=longinus}], reason: actual value does not contain any expected
+14:15:46.372 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+14:15:48.012 [main] DEBUG com.intuit.karate - request:
+1 > GET https://my-json-server.typicode.com/bioturn/FakeJson/db
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: my-json-server.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+14:15:48.436 [main] DEBUG com.intuit.karate - response time in milliseconds: 420.72
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5520d8775e07cf58-IAD
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 08 Jan 2020 20:15:48 GMT
+1 < Etag: W/"1ee-s/VChpt7zzO7WT57EoKurguFIdc"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Expires: -1
+1 < Pragma: no-cache
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d277344e6eec21b17912a72b36ffb97d41578514548; expires=Fri, 07-Feb-20 20:15:48 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+{
+  "weapons": [
+    {
+      "bladed": [
+        {
+          "spear": "longinus",
+          "sword": "excalibur"
+        }
+      ]
+    }
+  ],
+  "spells": [
+    {
+      "buff": [
+        {
+          "strength": "embolden",
+          "magic": "empower"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "attack": [
+        {
+          "bread": "tricut"
+        }
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "physical": [
+        {
+          "hands": "monk"
+        }
+      ]
+    }
+  ]
+}
+
+14:17:42.111 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+14:17:43.807 [main] DEBUG com.intuit.karate - request:
+1 > GET https://my-json-server.typicode.com/bioturn/FakeJson/db
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: my-json-server.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+14:17:44.301 [main] DEBUG com.intuit.karate - response time in milliseconds: 466.89
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5520db4b3863ea86-IAD
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 08 Jan 2020 20:17:44 GMT
+1 < Etag: W/"1ee-s/VChpt7zzO7WT57EoKurguFIdc"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Expires: -1
+1 < Pragma: no-cache
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d2c529686fbb50266f6b75f5bb498f6391578514664; expires=Fri, 07-Feb-20 20:17:44 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+{
+  "weapons": [
+    {
+      "bladed": [
+        {
+          "spear": "longinus",
+          "sword": "excalibur"
+        }
+      ]
+    }
+  ],
+  "spells": [
+    {
+      "buff": [
+        {
+          "strength": "embolden",
+          "magic": "empower"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "attack": [
+        {
+          "bread": "tricut"
+        }
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "physical": [
+        {
+          "hands": "monk"
+        }
+      ]
+    }
+  ]
+}
+
+14:20:22.217 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+14:20:23.909 [main] DEBUG com.intuit.karate - request:
+1 > GET https://my-json-server.typicode.com/bioturn/FakeJson/db
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: my-json-server.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+14:20:24.415 [main] DEBUG com.intuit.karate - response time in milliseconds: 503.44
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5520df33b9c1f0b5-IAD
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 08 Jan 2020 20:20:24 GMT
+1 < Etag: W/"1ee-s/VChpt7zzO7WT57EoKurguFIdc"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Expires: -1
+1 < Pragma: no-cache
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d7fbf074aa7fbc954a8d5e7c1720d8f831578514824; expires=Fri, 07-Feb-20 20:20:24 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+{
+  "weapons": [
+    {
+      "bladed": [
+        {
+          "spear": "longinus",
+          "sword": "excalibur"
+        }
+      ]
+    }
+  ],
+  "spells": [
+    {
+      "buff": [
+        {
+          "strength": "embolden",
+          "magic": "empower"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "attack": [
+        {
+          "bread": "tricut"
+        }
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "physical": [
+        {
+          "hands": "monk"
+        }
+      ]
+    }
+  ]
+}
+
+14:21:29.562 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+14:21:31.229 [main] DEBUG com.intuit.karate - request:
+1 > GET https://my-json-server.typicode.com/bioturn/FakeJson/db
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: my-json-server.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+14:21:31.678 [main] DEBUG com.intuit.karate - response time in milliseconds: 429.52
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5520e0d88d99ea34-IAD
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 08 Jan 2020 20:21:31 GMT
+1 < Etag: W/"1ee-s/VChpt7zzO7WT57EoKurguFIdc"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Expires: -1
+1 < Pragma: no-cache
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=dac7218353ebdf9756a8be48b98ac9ed41578514891; expires=Fri, 07-Feb-20 20:21:31 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+{
+  "weapons": [
+    {
+      "bladed": [
+        {
+          "spear": "longinus",
+          "sword": "excalibur"
+        }
+      ]
+    }
+  ],
+  "spells": [
+    {
+      "buff": [
+        {
+          "strength": "embolden",
+          "magic": "empower"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "attack": [
+        {
+          "bread": "tricut"
+        }
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "physical": [
+        {
+          "hands": "monk"
+        }
+      ]
+    }
+  ]
+}
+
+14:21:31.688 [main] ERROR com.intuit.karate - assertion failed: path: $..bladed[*], actual: [[{"spear":"longinus","sword":"excalibur"}]], expected: [{spear=longinus, bow=diana}], reason: actual value does not contain any expected
+14:22:06.292 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+14:22:07.987 [main] DEBUG com.intuit.karate - request:
+1 > GET https://my-json-server.typicode.com/bioturn/FakeJson/db
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: my-json-server.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+14:22:08.439 [main] DEBUG com.intuit.karate - response time in milliseconds: 448.29
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5520e1be5d4fcefc-IAD
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 08 Jan 2020 20:22:08 GMT
+1 < Etag: W/"1ee-s/VChpt7zzO7WT57EoKurguFIdc"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Expires: -1
+1 < Pragma: no-cache
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d7222901371bec823f8b677a7e6f10d141578514928; expires=Fri, 07-Feb-20 20:22:08 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+{
+  "weapons": [
+    {
+      "bladed": [
+        {
+          "spear": "longinus",
+          "sword": "excalibur"
+        }
+      ]
+    }
+  ],
+  "spells": [
+    {
+      "buff": [
+        {
+          "strength": "embolden",
+          "magic": "empower"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "attack": [
+        {
+          "bread": "tricut"
+        }
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "physical": [
+        {
+          "hands": "monk"
+        }
+      ]
+    }
+  ]
+}
+
+14:22:08.450 [main] ERROR com.intuit.karate - assertion failed: path: $, actual: {weapons=[{"bladed":[{"spear":"longinus","sword":"excalibur"}]}], spells=[{"buff":[{"strength":"embolden","magic":"empower"}]}], abilities=[{"attack":[{"bread":"tricut"}]}], classes=[{"physical":[{"hands":"monk"}]}]}, expected: {spear=longinus, bow=diana}, reason: no key-values matched
+14:23:47.487 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+14:23:49.070 [main] DEBUG com.intuit.karate - request:
+1 > GET https://my-json-server.typicode.com/bioturn/FakeJson/db
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: my-json-server.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+14:23:49.568 [main] DEBUG com.intuit.karate - response time in milliseconds: 476.29
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5520e4361dd9cf44-IAD
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 08 Jan 2020 20:23:49 GMT
+1 < Etag: W/"1ee-s/VChpt7zzO7WT57EoKurguFIdc"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Expires: -1
+1 < Pragma: no-cache
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=db97472c41542c49014b315a73ef799551578515029; expires=Fri, 07-Feb-20 20:23:49 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+{
+  "weapons": [
+    {
+      "bladed": [
+        {
+          "spear": "longinus",
+          "sword": "excalibur"
+        }
+      ]
+    }
+  ],
+  "spells": [
+    {
+      "buff": [
+        {
+          "strength": "embolden",
+          "magic": "empower"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "attack": [
+        {
+          "bread": "tricut"
+        }
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "physical": [
+        {
+          "hands": "monk"
+        }
+      ]
+    }
+  ]
+}
+
+14:23:49.573 [main] ERROR com.intuit.karate - assertion failed: path: $.weapons[*], actual: [{"bladed":[{"spear":"longinus","sword":"excalibur"}]}], expected: [{spear=longinus, bow=diana}], reason: actual value does not contain any expected
+14:24:41.167 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+14:24:43.395 [main] DEBUG com.intuit.karate - request:
+1 > GET https://my-json-server.typicode.com/bioturn/FakeJson/db
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: my-json-server.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+14:24:43.923 [main] DEBUG com.intuit.karate - response time in milliseconds: 522.74
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 5520e58a1ccbc1e8-IAD
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 08 Jan 2020 20:24:43 GMT
+1 < Etag: W/"1ee-s/VChpt7zzO7WT57EoKurguFIdc"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Expires: -1
+1 < Pragma: no-cache
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=dbe3577613ea944642f08e41b4693d0261578515083; expires=Fri, 07-Feb-20 20:24:43 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+{
+  "weapons": [
+    {
+      "bladed": [
+        {
+          "spear": "longinus",
+          "sword": "excalibur"
+        }
+      ]
+    }
+  ],
+  "spells": [
+    {
+      "buff": [
+        {
+          "strength": "embolden",
+          "magic": "empower"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "attack": [
+        {
+          "bread": "tricut"
+        }
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "physical": [
+        {
+          "hands": "monk"
+        }
+      ]
+    }
+  ]
+}
+
+14:28:09.380 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+14:28:09.530 [main] ERROR com.intuit.karate - assertion failed: path: $[*], actual: [{name=greg, height=37}, {name=nick, height=100}], expected: [{name=nick}], reason: actual value does not contain any expected
+14:29:05.631 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+14:29:05.763 [main] ERROR com.intuit.karate - assertion failed: path: $[*], actual: [{name=greg, height=37}, {name=nick, height=100}], expected: [{name=nick}], reason: actual value does not contain any expected
+14:30:30.018 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+14:30:30.161 [main] ERROR com.intuit.karate - assertion failed: path: $[*], actual: [{name=greg, height=37}, {name=nick, height=100}], expected: [{"name":"nick"}], reason: actual value does not contain any expected
+14:31:04.002 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+14:31:27.481 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+14:31:27.614 [main] ERROR com.intuit.karate - assertion failed: path: $[*], actual: [{name=greg, height=37}, {name=nick, height=100}], expected: [nick], reason: actual value does not contain any expected
+14:31:48.080 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+14:31:48.249 [main] ERROR com.intuit.karate - assertion failed: path: $[*], actual: [{name=greg, height=37}, {name=nick, height=100}], expected: [name: nick], reason: actual value does not contain any expected
+14:32:10.319 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+14:32:10.440 [main] ERROR com.intuit.karate - assertion failed: path: $[*], actual: [{name=greg, height=37}, {name=nick, height=100}], expected: [{name: nick}], reason: actual value does not contain any expected
+14:33:39.928 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+14:33:40.097 [main] ERROR com.intuit.karate - assertion failed: path: $[*], actual: [{name=greg, height=37}, {name=nick, height=100}], expected: [{name=nick, m=1}], reason: actual value does not contain any expected
+14:34:23.157 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+14:35:04.982 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+14:35:16.845 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+14:35:16.971 [main] ERROR com.intuit.karate - assertion failed: path: $[*], actual: [{name=greg, height=37}, {name=nick, height=100}], expected: [{name=greg}], reason: actual value does not contain any expected
+14:35:28.167 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+14:35:37.982 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+09:48:00.928 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+09:49:02.928 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+10:22:42.814 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+10:23:04.786 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+10:32:41.981 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+10:36:29.833 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+10:44:13.224 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+10:44:44.972 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+10:57:57.755 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+11:25:59.969 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+11:26:29.141 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+11:26:44.142 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+11:00:04.089 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+11:00:05.764 [main] DEBUG com.intuit.karate - request:
+1 > GET https://my-json-server.typicode.com/bioturn/FakeJson/db
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: my-json-server.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+11:00:07.266 [main] DEBUG com.intuit.karate - response time in milliseconds: 1505.10
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 57fcb84abd738546-ORD
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 06 Apr 2020 16:00:07 GMT
+1 < Etag: W/"1ee-s/VChpt7zzO7WT57EoKurguFIdc"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Expires: -1
+1 < Pragma: no-cache
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=dd4a83cd8a38efad44c517b6f070903d01586188806; expires=Wed, 06-May-20 16:00:06 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+{
+  "weapons": [
+    {
+      "bladed": [
+        {
+          "spear": "longinus",
+          "sword": "excalibur"
+        }
+      ]
+    }
+  ],
+  "spells": [
+    {
+      "buff": [
+        {
+          "strength": "embolden",
+          "magic": "empower"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "attack": [
+        {
+          "bread": "tricut"
+        }
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "physical": [
+        {
+          "hands": "monk"
+        }
+      ]
+    }
+  ]
+}
+
+11:00:07.276 [main] INFO  com.intuit.karate - [print] {
+  "weapons": [
+    {
+      "bladed": [
+        {
+          "spear": "longinus",
+          "sword": "excalibur"
+        }
+      ]
+    }
+  ],
+  "spells": [
+    {
+      "buff": [
+        {
+          "strength": "embolden",
+          "magic": "empower"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "attack": [
+        {
+          "bread": "tricut"
+        }
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "physical": [
+        {
+          "hands": "monk"
+        }
+      ]
+    }
+  ]
+}
+
+11:00:07.290 [main] DEBUG com.intuit.karate - request:
+2 > GET https://my-json-server.typicode.com/bioturn/FakeJson/db
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Cookie: __cfduid=dd4a83cd8a38efad44c517b6f070903d01586188806
+2 > Host: my-json-server.typicode.com
+2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+11:00:08.165 [main] DEBUG com.intuit.karate - response time in milliseconds: 875.07
+2 < 200
+2 < Access-Control-Allow-Credentials: true
+2 < CF-Cache-Status: DYNAMIC
+2 < CF-RAY: 57fcb850ac73855e-ORD
+2 < Cache-Control: no-cache
+2 < Connection: keep-alive
+2 < Content-Type: application/json; charset=utf-8
+2 < Date: Mon, 06 Apr 2020 16:00:07 GMT
+2 < Etag: W/"1ee-s/VChpt7zzO7WT57EoKurguFIdc"
+2 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2 < Expires: -1
+2 < Pragma: no-cache
+2 < Server: cloudflare
+2 < Transfer-Encoding: chunked
+2 < Vary: Origin, Accept-Encoding
+2 < Via: 1.1 vegur
+2 < X-Content-Type-Options: nosniff
+2 < X-Powered-By: Express
+{
+  "weapons": [
+    {
+      "bladed": [
+        {
+          "spear": "longinus",
+          "sword": "excalibur"
+        }
+      ]
+    }
+  ],
+  "spells": [
+    {
+      "buff": [
+        {
+          "strength": "embolden",
+          "magic": "empower"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "attack": [
+        {
+          "bread": "tricut"
+        }
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "physical": [
+        {
+          "hands": "monk"
+        }
+      ]
+    }
+  ]
+}
+
+11:00:08.185 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+11:00:08.205 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+11:00:08.210 [main] DEBUG com.intuit.karate - request:
+1 > POST https://my-json-server.typicode.com/bioturn/FakeJson
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 160
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: my-json-server.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+{"name":"Test User","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
+
+11:00:08.977 [main] DEBUG com.intuit.karate - response time in milliseconds: 768.11
+1 < 404
+1 < Access-Control-Allow-Credentials: true
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 57fcb855efaafd82-ORD
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Length: 2
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 06 Apr 2020 16:00:08 GMT
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Expires: -1
+1 < Pragma: no-cache
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=dc56e52d84f05d91bd21afa549d78652c1586188808; expires=Wed, 06-May-20 16:00:08 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+{}
+
+11:00:08.977 [main] ERROR com.intuit.karate - status code was: 404, expected: 201, response time: 768, url: https://my-json-server.typicode.com/bioturn/FakeJson, response: {}
+11:00:08.988 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+11:00:09.006 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+11:00:09.028 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+11:00:09.038 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+11:00:42.888 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+11:00:44.578 [main] DEBUG com.intuit.karate - request:
+1 > GET https://my-json-server.typicode.com/bioturn/FakeJson/db
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: my-json-server.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+11:00:45.076 [main] DEBUG com.intuit.karate - response time in milliseconds: 492.61
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 57fcb9386b02c52c-ORD
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 06 Apr 2020 16:00:45 GMT
+1 < Etag: W/"1ee-s/VChpt7zzO7WT57EoKurguFIdc"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Expires: -1
+1 < Pragma: no-cache
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=dc9f94431ec821281d84196f45270812b1586188844; expires=Wed, 06-May-20 16:00:44 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+{
+  "weapons": [
+    {
+      "bladed": [
+        {
+          "spear": "longinus",
+          "sword": "excalibur"
+        }
+      ]
+    }
+  ],
+  "spells": [
+    {
+      "buff": [
+        {
+          "strength": "embolden",
+          "magic": "empower"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "attack": [
+        {
+          "bread": "tricut"
+        }
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "physical": [
+        {
+          "hands": "monk"
+        }
+      ]
+    }
+  ]
+}
+
+11:00:45.085 [main] INFO  com.intuit.karate - [print] {
+  "weapons": [
+    {
+      "bladed": [
+        {
+          "spear": "longinus",
+          "sword": "excalibur"
+        }
+      ]
+    }
+  ],
+  "spells": [
+    {
+      "buff": [
+        {
+          "strength": "embolden",
+          "magic": "empower"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "attack": [
+        {
+          "bread": "tricut"
+        }
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "physical": [
+        {
+          "hands": "monk"
+        }
+      ]
+    }
+  ]
+}
+
+11:00:45.097 [main] DEBUG com.intuit.karate - request:
+2 > GET https://my-json-server.typicode.com/bioturn/FakeJson/db
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Cookie: __cfduid=dc9f94431ec821281d84196f45270812b1586188844
+2 > Host: my-json-server.typicode.com
+2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+11:00:47.255 [main] DEBUG com.intuit.karate - response time in milliseconds: 2157.08
+2 < 200
+2 < Access-Control-Allow-Credentials: true
+2 < CF-Cache-Status: DYNAMIC
+2 < CF-RAY: 57fcb93a9dbdc540-ORD
+2 < Cache-Control: no-cache
+2 < Connection: keep-alive
+2 < Content-Type: application/json; charset=utf-8
+2 < Date: Mon, 06 Apr 2020 16:00:47 GMT
+2 < Etag: W/"1ee-s/VChpt7zzO7WT57EoKurguFIdc"
+2 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2 < Expires: -1
+2 < Pragma: no-cache
+2 < Server: cloudflare
+2 < Transfer-Encoding: chunked
+2 < Vary: Origin, Accept-Encoding
+2 < Via: 1.1 vegur
+2 < X-Content-Type-Options: nosniff
+2 < X-Powered-By: Express
+{
+  "weapons": [
+    {
+      "bladed": [
+        {
+          "spear": "longinus",
+          "sword": "excalibur"
+        }
+      ]
+    }
+  ],
+  "spells": [
+    {
+      "buff": [
+        {
+          "strength": "embolden",
+          "magic": "empower"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "attack": [
+        {
+          "bread": "tricut"
+        }
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "physical": [
+        {
+          "hands": "monk"
+        }
+      ]
+    }
+  ]
+}
+
+11:00:47.265 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+11:00:47.285 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+11:00:47.295 [main] DEBUG com.intuit.karate - request:
+1 > POST https://my-json-server.typicode.com/bioturn/FakeJson
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 160
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: my-json-server.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+{"name":"Test User","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
+
+11:00:48.155 [main] DEBUG com.intuit.karate - response time in milliseconds: 863.91
+1 < 404
+1 < Access-Control-Allow-Credentials: true
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 57fcb94a8b76f242-ORD
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Length: 2
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 06 Apr 2020 16:00:47 GMT
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Expires: -1
+1 < Pragma: no-cache
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=dff6880b1c444d42da816062bee5df28c1586188847; expires=Wed, 06-May-20 16:00:47 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+{}
+
+11:00:48.155 [main] ERROR com.intuit.karate - status code was: 404, expected: 201, response time: 864, url: https://my-json-server.typicode.com/bioturn/FakeJson, response: {}
+11:00:48.175 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+11:00:48.195 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+11:00:48.236 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+11:00:48.250 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+11:02:28.154 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+11:02:29.776 [main] DEBUG com.intuit.karate - request:
+1 > POST https://my-json-server.typicode.com/bioturn/FakeJson
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 160
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: my-json-server.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+{"name":"Test User","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
+
+11:02:31.331 [main] DEBUG com.intuit.karate - response time in milliseconds: 1556.32
+1 < 404
+1 < Access-Control-Allow-Credentials: true
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 57fcbbcf5b89c530-ORD
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Length: 2
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 06 Apr 2020 16:02:31 GMT
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Expires: -1
+1 < Pragma: no-cache
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d60f01cbe10fe46168539b353c7dc2b251586188950; expires=Wed, 06-May-20 16:02:30 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+{}
+
+11:02:31.331 [main] ERROR com.intuit.karate - status code was: 404, expected: 201, response time: 1556, url: https://my-json-server.typicode.com/bioturn/FakeJson, response: {}
+11:11:08.537 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+11:11:08.659 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+11:11:08.713 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 
+11:11:08.733 [main] INFO  com.intuit.karate - karate.env system property was: http://localhost:8080/v1/ 

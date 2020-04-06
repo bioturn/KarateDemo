@@ -1,0 +1,10 @@
+{
+  "simulation": "mock.UserSimulation",
+  "simulationId": "usersimulation",
+  "start": 1578497730684,
+  "description": "",
+  "scenarios": ["Playing with Fire"],
+  "assertions": [
+
+  ]
+}

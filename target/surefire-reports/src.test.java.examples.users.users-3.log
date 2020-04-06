@@ -1,0 +1,34 @@
+11:11:08.714 karate.env system property was: http://localhost:8080/v1/ 
+11:00:47.295 request:
+1 > POST https://my-json-server.typicode.com/bioturn/FakeJson
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 160
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: my-json-server.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+{"name":"Test User","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
+
+11:00:48.155 response time in milliseconds: 863.91
+1 < 404
+1 < Access-Control-Allow-Credentials: true
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 57fcb94a8b76f242-ORD
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Length: 2
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 06 Apr 2020 16:00:47 GMT
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Expires: -1
+1 < Pragma: no-cache
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=dff6880b1c444d42da816062bee5df28c1586188847; expires=Wed, 06-May-20 16:00:47 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+{}
+
+11:00:48.155 status code was: 404, expected: 201, response time: 864, url: https://my-json-server.typicode.com/bioturn/FakeJson, response: {}

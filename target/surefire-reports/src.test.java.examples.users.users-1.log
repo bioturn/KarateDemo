@@ -1,0 +1,154 @@
+11:11:08.542 karate.env system property was: http://localhost:8080/v1/ 
+11:02:29.776 request:
+1 > POST https://my-json-server.typicode.com/bioturn/FakeJson
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 160
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: my-json-server.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+{"name":"Test User","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
+
+11:02:31.331 response time in milliseconds: 1556.32
+1 < 404
+1 < Access-Control-Allow-Credentials: true
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 57fcbbcf5b89c530-ORD
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Length: 2
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 06 Apr 2020 16:02:31 GMT
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Expires: -1
+1 < Pragma: no-cache
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d60f01cbe10fe46168539b353c7dc2b251586188950; expires=Wed, 06-May-20 16:02:30 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+{}
+
+11:02:31.331 status code was: 404, expected: 201, response time: 1556, url: https://my-json-server.typicode.com/bioturn/FakeJson, response: {}
+sses": [
+    {
+      "physical": [
+        {
+          "hands": "monk"
+        }
+      ]
+    }
+  ]
+}
+
+11:00:45.085 [print] {
+  "weapons": [
+    {
+      "bladed": [
+        {
+          "spear": "longinus",
+          "sword": "excalibur"
+        }
+      ]
+    }
+  ],
+  "spells": [
+    {
+      "buff": [
+        {
+          "strength": "embolden",
+          "magic": "empower"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "attack": [
+        {
+          "bread": "tricut"
+        }
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "physical": [
+        {
+          "hands": "monk"
+        }
+      ]
+    }
+  ]
+}
+
+11:00:45.097 request:
+2 > GET https://my-json-server.typicode.com/bioturn/FakeJson/db
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Cookie: __cfduid=dc9f94431ec821281d84196f45270812b1586188844
+2 > Host: my-json-server.typicode.com
+2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_201)
+
+11:00:47.255 response time in milliseconds: 2157.08
+2 < 200
+2 < Access-Control-Allow-Credentials: true
+2 < CF-Cache-Status: DYNAMIC
+2 < CF-RAY: 57fcb93a9dbdc540-ORD
+2 < Cache-Control: no-cache
+2 < Connection: keep-alive
+2 < Content-Type: application/json; charset=utf-8
+2 < Date: Mon, 06 Apr 2020 16:00:47 GMT
+2 < Etag: W/"1ee-s/VChpt7zzO7WT57EoKurguFIdc"
+2 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2 < Expires: -1
+2 < Pragma: no-cache
+2 < Server: cloudflare
+2 < Transfer-Encoding: chunked
+2 < Vary: Origin, Accept-Encoding
+2 < Via: 1.1 vegur
+2 < X-Content-Type-Options: nosniff
+2 < X-Powered-By: Express
+{
+  "weapons": [
+    {
+      "bladed": [
+        {
+          "spear": "longinus",
+          "sword": "excalibur"
+        }
+      ]
+    }
+  ],
+  "spells": [
+    {
+      "buff": [
+        {
+          "strength": "embolden",
+          "magic": "empower"
+        }
+      ]
+    }
+  ],
+  "abilities": [
+    {
+      "attack": [
+        {
+          "bread": "tricut"
+        }
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "physical": [
+        {
+          "hands": "monk"
+        }
+      ]
+    }
+  ]
+}
+
